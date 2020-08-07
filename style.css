@@ -1,0 +1,449 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.header_area{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.navbar-brand{
+    font-size: 18px;
+}
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 6rem;
+}
+.logo-img{
+    width: 60px;
+    height: 25px;
+}
+
+.header_area .main-menu .navbar{
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    
+}
+.head-container{
+    border-bottom: solid 1px #252525;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: indigo;
+    padding: 1rem;
+    
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    color: indigo;
+    background: rgb(0, 78, 104);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    font-family: 'Righteous', cursive;
+    background: rgb(0, 78, 104);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: 1s;
+}
+.main-container{
+    border-bottom: solid 1px #252525;
+}
+.main-head{
+    font-family: 'Righteous', cursive;
+    text-align: left;
+}
+.head-tag{
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    
+}
+.img-svg{
+    animation: fadeIn 3s;
+
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.main-text{
+    position: absolute;
+    left: -700px;
+    width: 600px;
+    -webkit-animation: slide 0.5s forwards;
+    animation: slide 0.3s forwards;
+    animation-delay: 2s;
+    border-left: solid 5px #252525;
+}
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+.about-area{
+    padding: 8rem 5rem;
+}
+
+.about-area .about-title h2 > span{
+    display: block;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 15px;
+}
+
+.about-area .about-title .paragraph > p{
+    padding: .4rem 0;
+}
+.skills{
+    padding-top: 20px;
+}
+.skills-section{
+    text-align: center;
+
+}
+.skills{
+    position: relative;
+    list-style: none;
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    margin: 50px 0;
+}
+.skills-ul{
+    position: relative;
+    margin: 50px 0;
+    list-style: none;
+    font-size: 20px;
+}
+.skills-ul:before{
+    content: '';
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 15px;
+    border-radius: 1000px;
+    background-color: rgb(29, 28, 28);
+    opacity: .5;
+}
+.skills-ul:after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 15px;
+    border-radius: 1000px;
+    background-color: rgb(29, 28, 28);
+    opacity: 1;
+    animation: ease .7s forwards;
+}
+.html:hover{
+    color: orange;
+    transition: .7s ease-in;
+}
+.html::after{
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        width: 99%;
+    }
+}
+.css:hover{
+    color: rgb(39, 7, 182);
+    transition: .5s;
+}
+.css::after{
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        width: 90%;
+    }
+}
+.javascript:hover{
+    color: rgb(211, 214, 3);
+    transition: .5s;
+}
+.javascript::after{
+    animation-name: javascript;
+}
+@keyframes javascript{
+    to{
+        width: 70%;
+    }
+}
+.photoshop:hover{
+    color: rgb(3, 119, 214);
+    transition: .5s;
+}
+.photoshop::after{
+    animation-name: photoshop;
+}
+@keyframes photoshop{
+    to{
+        width: 80%;
+    }
+}
+.ps{
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.ps:hover{
+    color: rgb(3, 119, 214);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.ui-ux:hover{
+    color: rgb(156, 2, 170);
+    transition: .5s;
+}
+.ui-ux::after{
+    animation-name: ui-ux;
+}
+@keyframes ui-ux{
+    to{
+        width: 75%;
+    }
+}
+.skills-svg{
+    z-index: -1;
+    align-items: center;
+}
+.about-border{
+    border-bottom: solid 1px #252525;
+}
+
+.services-area{
+    padding: 0rem 6rem;
+}
+
+.services-title{
+    padding: 0 14rem;
+
+}
+
+.services-title h1{
+    font-size: 30px;
+    font-family: 'Righteous', cursive;
+}
+.services{
+    width: 16rem;
+    margin: 5rem .5rem;
+    transition: box-shadow .7s ease;
+}
+.services:hover{
+    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+    background: rgba(245, 244, 255, 0.973);
+}
+.service-img{
+    width: 100px;
+    padding: 10px;
+}
+.service-img-s1{
+    width: 100px;
+    height: 65px;
+}
+.service{
+    padding: 2px;
+}
+.card-title{
+    font-family: 'Righteous', cursive;
+    font-size: 15px;
+
+}
+.service-container{
+    border-bottom: solid 1px #252525;
+}
+
+
+.works{
+    padding: 4rem 0;
+    font-family: 'Righteous', cursive;
+}
+
+.button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.button-group button:hover{
+    color: rgb(4, 140, 185);
+    transition: ease .5s;
+    border-bottom: solid 2px rgb(4, 140, 185);
+}
+.our-project .img{
+    margin-top: 2rem;
+    max-width: 100%;
+    border-radius: 5px;
+    border: solid 1px rgb(14, 14, 14);
+
+}
+.our-project .img a:hover img{
+    filter: brightness(.7) drop-shadow(1px 8px 30px #b1afaf);
+    transition: ease-in 0.3s;
+}
+.title h4{
+    font: normal 700 25px/12px;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-bottom: 0rem;
+}
+.works-h2{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.works-container{
+    border-bottom: solid 1px #252525;
+}
+.contact-head{
+    padding: 4rem 0;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+}
+.contact-container{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(autofit,minmax(300px,1fr));
+    
+}
+.col{
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #252525;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+}
+.input-box input,
+.input-box textarea{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgba(212, 203, 250, 0.205);
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+    font-family: 'Barlow Condensed', sans-serif;
+    padding-top: 5px;
+}
+.input-box .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    padding: 0 10px;
+    display: block;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.input-box input:focus + .text,
+.input-box input:valid + .text{
+    top: -35px;
+    left: -5px;
+    color: rgb(1, 114, 151);
+}
+.input-box .line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+}
+.input-box textarea{
+    outline: none;
+}
+.input-box .textarea{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+
+}
+.input-box .textarea textarea{
+    height: 100%;
+    resize: none;
+}
+.input-box textarea:focus + .text,
+.input-box textarea:valid + .text{
+    top: -35px;
+    left: -5px;
+    color: rgb(1, 114, 151);
+}
+.contact-btn{
+    text-align: center;
+    position: relative;
+    padding: 0 10px;
+
+}
+.footer-section{
+    background: url(aerial-photo-of-city-2832039.jpg);
+    padding: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer-logo{
+    width: 60px;
+    height: 25px;
+}
+.footer-area{
+    padding-top: 10px;
+}
+.footer-head{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15px;
+    padding-top: 5px;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+}
+.footer-social i{
+    color: #252525;
+    font-size: 20px;
+    padding-right: 5px;
+}
+.footer-social i:hover{
+    color: rgb(0, 78, 104);
+}
+.copyrights .para span{
+    color: rgb(1, 114, 151);
+}
+
+
+
+
+
+
+
+
+
+
+
+
